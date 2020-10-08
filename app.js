@@ -4,10 +4,10 @@ const fileName = './test.txt';
 const array = ['おはようございます\n', 'こんにちは\n', 'こんばんは\n'];
 
 for (let count = 0; count < 30; count++) {
-	Promise.all(array.map(i => syncFunction(i)));
+	Promise.all(array.map(i => promiseFunction(i)));
 }
 
-function syncFunction(str) {
+function promiseFunction(str) {
 	return new Promise((resolve, rejct) => {
 		fs.appendFile(fileName, str, 'utf8', () => { resolve() });
 	});
