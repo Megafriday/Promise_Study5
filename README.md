@@ -29,7 +29,7 @@ thenメソッドのコールバック関数の引数にはresolve関数で渡さ
 
 3. async/await
 - promise構文では書きづらい処理を書けたり、簡潔に書けたりする
-- async は非同期関数（async function）を定義する関数宣言であり、関数の頭につけることで、Promiseオブジェクトを返す関数にすることができる
+- async は非同期関数（async function）を定義する関数宣言であり、関数の頭につけることで、**Promiseオブジェクトを返す関数**にすることができる
 - awaitは、async function内で使う、Promiseオブジェクトが値を返すのを待つ演算子で、値が返されると処理を再開します
 - async/awaitは、Promiseの効率の良い書き方なので、裏はPromiseです。別の概念ではありません。簡単に言うと、**awaitの後ろの行を全て、その行のthenに入れたことにするってやつです。**
 - **async function からの戻り値は、Promiseオブジェクトでラップされています**
